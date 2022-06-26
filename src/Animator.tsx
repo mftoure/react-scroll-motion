@@ -39,7 +39,7 @@ const Animator: FC<AnimatorProps> = (props) => {
         ? ({
             ...computeStyle(animation?.in?.style, currentProgress),
           } as CSSProperties)
-        : { display: "none" },
+        : { display: "initial" },
     [
       isSSR,
       currentPage,
